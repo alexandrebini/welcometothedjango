@@ -1,5 +1,9 @@
 *.pyc
+.DS_Store
 .Python
 bin
+build
 include
 lib
+local
+Scripts
