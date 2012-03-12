@@ -1,23 +1,37 @@
-<!DOCTYPE"HTML"PUBLIC""b//W3C//DTD"HTML"4.01//EN">
+<!DOCTYPE html>
 <html>
   <head>
     <title>EventeX</title>
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ STATIC_URL }}css/application.css" rel="stylesheet">
   </head>
   
   <body>
-    <img src="{{ STATIC_URL }}img/logo.png"/>
-    <h1>Parabéns {{ subscription.name }}!</h1>
-    <p>
-    Sua inscrição foi realizada em
-    {{ subscription.created_at|date:"d/m/Y" }}.
-    </p>
-    <p>
-    Em breve, alguém entrará em contato pelo
-    {% if subscription.phone %}
-      telefone {{ subscription.phone }}.
-    {% else %}
-      email {{ subscription.email }}.
-    {% endif %}
-    </p>
+    <div class="container">
+      
+      <div class="hero-unit clearfix row">
+        <div class="span6">
+          <h1>EventeX</h1>
+          <br/>
+          <h3>
+            Abertura das inscrições em 18/03/2012
+          </h3>
+        </div>
+        
+        <div class="span4 contact">
+          <p>Nosso site está a caminho, mas qualquer dúvida até lá é só</p>
+          <a href="mailto:eventex@eventex.com.br" class="btn btn-success btn-large">
+            entrar em contato!
+          </a>
+        </div>
+      </div>
+      
+      <footer class="footer">
+        @EventeX 2012
+      </footer>
+    </div>
+    
+    <script src="{{ STATIC_URL }}js/jquery-1.7.1.min.js"></script>
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
   </body>
 </html>
