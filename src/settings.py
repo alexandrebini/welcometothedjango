@@ -149,7 +149,7 @@ LOGGING = {
     }
 }
 
-DEFAULT_EMAIL_FROM = 'foo@gmail.com'
+DEFAULT_EMAIL_FROM = 'eventx.django@gmail.com'
 if 'True' == os.environ.get('SEND_EMAIL', 'False'):
 	EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 	EMAIL_HOST = 'smtp.gmail.com'
