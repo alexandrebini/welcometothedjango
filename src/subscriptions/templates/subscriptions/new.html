@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class='span4'>
+		<h3>Formulário de inscrição</h3>
+
+		<form action='.' method='POST' class='span4'>
+			<fieldset>
+				{% csrf_token %}
+				{{ form.as_p }}
+			</fieldset>
+			<input type='submit' value='Enviar!' class='btn btn-primary'>
+		</form>
+	</div>
+{% endblock content %}

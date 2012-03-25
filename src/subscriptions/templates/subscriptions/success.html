@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+	<div class='span4'>
+		<p>
+			Parabéns {{ subscription.name }},
+			sua inscrição foi realizada em {{ subscription.created_at|date:'d/m/Y' }}.
+		</p>
+		<p>Em breve, entraremos em contato pelo 
+			{% if subscription.phone %}
+				telefone: {{ subscription.phone }}
+			{% else %}
+				email: {{ subscrition.email }}
+			{% endif %}
+		</p>
+		<a href='/'>
+			<i class='icon-home'></i>  Home
+		</a>
+	</div>
+{% endblock content %}

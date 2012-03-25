@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EventeX</title>
+    <link href='{{ STATIC_URL }}css/bootstrap.min.css' rel='stylesheet'>
+    <link href='{{ STATIC_URL }}css/application.css' rel='stylesheet'>
+  </head>
+  
+  <body>
+    <div class='container'>
+			<div class='hero-unit clearfix row'>
+	      <div class='span6'>
+	        <h1><a href='/' class='logo'> EventeX</a></h1>
+	        <br/>
+	      </div>
+				
+				{% block content %}
+				{% endblock content %}
+	    </div>    
+
+      <footer class='footer'>
+        @EventeX 2012
+      </footer>
+    </div>
+    
+    <script src='{{ STATIC_URL }}js/jquery-1.7.1.min.js'></script>
+    <script src='{{ STATIC_URL }}js/bootstrap.min.js'></script>
+  </body>
+</html>

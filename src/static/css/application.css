@@ -8,6 +8,9 @@ h1 {
   font-family: 'Ubuntu Condensed', sans-serif;
   text-shadow: 0px 0px 2px #CCC;
 }
+h1 a.logo {
+	color: #000;
+}
 
 footer {
   margin-top: 200px;
